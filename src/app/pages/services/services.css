@@ -1,0 +1,67 @@
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  flex: 1;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* ICON */
+.icon {
+  font-size: 40px;
+  color: #0ea5e9;
+  margin-bottom: 15px;
+}
+
+/* HOVER EFFECT 🔥 */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+
+.book-btn {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #0284c7;
+}
+
+
+.book-btn {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #0284c7;
+}

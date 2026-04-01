@@ -1,0 +1,43 @@
+<h2>Book a Service</h2>
+
+<!-- SUCCESS MESSAGE -->
+
+<p *ngIf="successMessage" class="success">
+  {{ successMessage }}
+</p>
+
+  
+<form (ngSubmit)="submitForm()" #f="ngForm" class="form">
+  <input type="text"
+         [(ngModel)]="formData.name"
+         name="name"
+         placeholder="Your Name"
+         required
+         #name="ngModel">
+
+  <input type="email"
+         [(ngModel)]="formData.email"
+         name="email"
+         placeholder="Email"
+         required
+         #email="ngModel">
+
+  <select [(ngModel)]="formData.service"
+          name="service"
+          required
+          #service="ngModel">
+    <option value="Plumbing">Plumbing</option>
+    <option value="Electrical">Electrical</option>
+    <option value="Cleaning">Cleaning</option>
+  </select>
+
+  <!-- ✅ IMPORTANT: disable if invalid -->
+  <button type="submit">
+    Book Now
+  </button>
+
+</form>
+
+  
+
+

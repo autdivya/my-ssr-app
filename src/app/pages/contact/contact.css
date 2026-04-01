@@ -1,0 +1,92 @@
+.contact {
+  text-align: center;
+  padding: 40px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  background: #1e3c72;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+
+.form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, button {
+  padding: 10px;
+}
+
+button {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+}
+
+
+.form {
+  animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+button:hover {
+  background: #0284c7;
+  cursor: pointer;
+}
+
+
+.success {
+  color: green;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+
+.success {
+  color: green;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+button {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0284c7;
+  cursor: pointer;
+}button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
