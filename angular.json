@@ -18,7 +18,6 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
-            "server": "src/main.server.ts",
             "tsConfig": "tsconfig.app.json",
 
             "assets": [
@@ -28,17 +27,7 @@
               }
             ],
 
-            "styles": ["src/styles.css"],
-
-            "ssr": {
-              "entry": "src/server.ts"
-            },
-
-            "outputMode": "server",
-
-            "security": {
-              "allowedHosts": ["localhost"]
-            }
+            "styles": ["src/styles.css"]
           },
 
           "configurations": {
@@ -81,7 +70,12 @@
           "defaultConfiguration": "development"
         },
 
-
+        "prerender": {
+          "builder": "@angular/build:prerender",
+          "options": {
+            "routes": ["/", "/about", "/services", "/contact"]
+          }
+        },
 
         "test": {
           "builder": "@angular/build:unit-test"
